@@ -22,18 +22,13 @@ export class HomeComponent implements OnInit {
 
   onClick(): void {
     
-    //console.log(this.color);
+    // console.log(this.color);
 
     if (this.color.length == 0) {      
-      this.color = 'bg-dark';      
+      this.color = 'dark';      
     }
 
-    this._globalService.subjectColor.next(this.color);
-    // this._globalService.subjectColor.subscribe(
-    //   () => {
-    //     //console.log(this.color);
-    //   }
-    // );
+    this._globalService.subjectColor.next(this.color);    
   }
 
 }
