@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GlobalService } from 'src/app/services/global.service';
 
@@ -31,4 +31,7 @@ export class HomeComponent implements OnInit {
     this._globalService.subjectColor.next(this.color);    
   }
 
+  ngOnDestroy(): void {
+    this._globalService.subjectColor.next('dark');
+  }
 }
