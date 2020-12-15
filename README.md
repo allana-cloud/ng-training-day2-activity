@@ -8,4 +8,4 @@ Run `docker-composer up` for a containerize dev server. Navigate to `http://loca
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `docker-composer exec ng generate component component-name` to generate a new component. You can also use `docker-composer exec ng generate directive|pipe|service|class|guard|interface|enum|module`.
