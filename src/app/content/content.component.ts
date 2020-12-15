@@ -8,12 +8,15 @@ import { GlobalService } from '../services/global.service';
 })
 export class ContentComponent implements OnInit {
 
-  titleShop: any;
+  titleShop: string;
   
-  constructor(private _globalService: GlobalService) { }
+  constructor(private _globalService: GlobalService) { 
+    this.titleShop = ' to Training Activity Day 2'
+  }
 
   ngOnInit(): void {
-    this.titleShop = this._globalService.appTitle;
+    // this.titleShop = this._globalService.appTitle;
+    // this.titleShop = this.titleShop.toUpperCase();
   }
 
 }

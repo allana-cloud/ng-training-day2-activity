@@ -8,7 +8,9 @@ import { GlobalService } from 'src/app/services/global.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  color;
+    
+  color: string;
+
   @Output() submitContent = new EventEmitter<string>();
 
   constructor(
