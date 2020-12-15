@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  
+  title = 'activity1';
+
+  appColor = '';
+
+  submit(value: string): void {
+    this.appColor = value;
+  };
+
+}
